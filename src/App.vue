@@ -2,8 +2,8 @@
   <div class="w-full h-full layout-page pt-5">
     <div class="mx-5 px-16 py-5 bg-white rounded-xl overflow-hidden <md:px-4">
       <div>
-        <div class="text-xl font-bold">商品：</div>
-        <div class="text-xl mt-0.5">PAYMENTLINK</div>
+        <div class="text-xl font-semibold">商品：</div>
+        <div class="text-xl mt-1 font-semibold">PAYMENTLINK</div>
       </div>
       <div class="md:flex">
         <div class="md:flex-shrink-0">
@@ -13,21 +13,11 @@
             alt="Man looking at item at a store"
           />
         </div>
-        <div class="p-8">
-          <div
-            class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
-          >
-            Case study
-          </div>
-          <a
-            href="#"
-            class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
-            >Finding customers for your new business</a
-          >
-          <p class="mt-2 text-gray-500">
-            Getting a new business off the ground is a lot of hard work. Here
-            are five ideas you can use to find your first customers.
-          </p>
+        <div class="p-8 flex-1">
+          <FormItem label="数量:" value="10" />
+          <FormItem label="数量:" value="10" />
+          <FormItem label="数量:" value="10" />
+          <FormItem label="数量:" value="10" />
         </div>
       </div>
     </div>
@@ -38,6 +28,19 @@
     </div>
   </div>
 </template>
+<script lang="ts">
+import { defineComponent } from 'vue';
+import FormItem from './components/FormItem.vue';
+export default defineComponent({
+  components: {
+    FormItem
+  },
+  setup() {
+    return {};
+  }
+});
+</script>
+
 <style>
 .layout-page {
   min-height: 100vh;
